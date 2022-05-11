@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        .d-column {
+            display: flex;
+            flex-direction: column;
+        }
+        .d-row {
+            display: flex;
+            flex-direction: row;
+        }
+        .m-top {
+            margin-top: 10px;
+        }
+        table td {
+            width: 100px;
+        }
+        .input {
+            width: 175px;
+            height: 30px;
+        }
+    </style>
+    <body>
+        <div class="d-row">
+            <div class="d-column">
+                <div class="pagesInfo" id="pagesInfo">
+                </div>
+                <div class="pagesInfoTable" id="pagesInfoTable">
+                </div>
+            </div>
+            <div class="d-row">
+                <div class="d-column">
+                    <input type="text" placeholder="Имя страницы" id="pageNameAdd">
+                    <input type="button" value="Добавить" id="addPageBtn" class="m-top">
+                </div>
+                <div class="d-column">
+                    <input type="text" placeholder="Имя страницы" id="pageNameDel">
+                    <input type="button" value="Удалить" id="deletePageBtn" class="m-top">
+                </div>
+                <div class="d-column">
+                    <input type="button" value="Обратиться к страницам" id="callPageBtn" class="input">
+                    <input type="button" value="Очистить память" id="freeMemoryBtn" class="input">
+                </div>
+            </div>
+        </div>
+        <script src="lab10js.js"></script>
+    </body>
+</html>
