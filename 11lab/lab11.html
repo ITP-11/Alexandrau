@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <style>
+        .btn {
+            padding: 5px 10px;
+        }
+
+        .d-row {
+            display: flex;
+            flex-direction: row;
+        }
+        .d-column {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <body>
+        <div class="d-column">
+                <div class="info d-column">
+                    <p>Файлы</p>
+                    <div class="info__files">
+                    </div>
+                    <p>Память</p>
+                    <div class="info__memory">
+                    </div>
+                </div>
+            
+            <div class="d-row">
+                <br>
+                <input type="button" value="Добавить" id="addFile" class="btn">
+                <input type="button" value="Дефрагментация" id="defragment" class="btn">
+            </div>
+
+            <br>
+        </div>
+        <script src="11lab.js"></script>
+    </body>
+</html>
